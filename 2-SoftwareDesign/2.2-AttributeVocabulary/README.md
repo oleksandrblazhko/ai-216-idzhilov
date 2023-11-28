@@ -5,5 +5,5 @@
 | User             | password         | Пароль користувача | текст | мінімум 8 символів          |
 | MusicSelector    | songname         | Ім'я пісні         | текст | -                           |
 | MusicSelector    | songartist       | Ім'я виконавця     | текст | -                           |
-| SleepTracker     | dreamname        | Ім'я сну           | текст | Кількість знаків < 20       |
-| SleepTracker     | dreamdescription | Ім'я опис          | текст | Кількість знаків < 1000     |
+| SleepTracker     | dreamname        | Назва сну          | текст | Кількість знаків < 20       |
+| SleepTracker     | dreamdescription | Загальна інформація або дані, що стосуються сну людини, такі як тривалість сну, сновидіння, якість сну тощо | текст | Кількість знаків < 1000 |
