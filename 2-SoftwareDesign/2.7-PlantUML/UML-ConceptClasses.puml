@@ -1,0 +1,24 @@
+@startuml
+
+hide circle
+title UML-діаграма концептуальних класів
+
+class User {
+  username: String
+  password: String
+}
+
+class SleepTracker{
+  dreamname: String
+  dreamdescription: String
+}
+
+class MusicSelector{
+  songname: String
+  songartist: String
+}
+
+User "1" --> "*" SleepTracker: "Record sleep information"
+SleepTracker"1" --> "1" MusicSelector: "Attach music"
+
+@enduml
