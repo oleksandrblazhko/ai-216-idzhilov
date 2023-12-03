@@ -1,1 +1,1 @@
-![UML-UseCase](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://https://raw.githubusercontent.com/oleksandrblazhko/ai-216-idzhilov/ai-216-idzhilov_with_laboratory-work-7/2-SoftwareDesign/2.7-PlantUML/UML-Deployment.puml)
+![UML-Deployment](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://https://raw.githubusercontent.com/oleksandrblazhko/ai-216-idzhilov/ai-216-idzhilov_with_laboratory-work-7/2-SoftwareDesign/2.7-PlantUML/UML-Deployment.puml)
