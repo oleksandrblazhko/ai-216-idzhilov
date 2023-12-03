@@ -1,0 +1,14 @@
+@startuml
+title Use Case Diagram
+
+left to right direction
+
+actor Студент
+rectangle "Програма" {
+    usecase (Запис інформації про сон)
+    usecase (Отримання даних)
+    
+    Студент-- (Запис інформації про сон)
+    (Запис інформації про сон) .> (Отримання даних) : include
+}
+@enduml
