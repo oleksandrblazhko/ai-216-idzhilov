@@ -1,0 +1,5 @@
+| TC id |                                             Опис кроків тестового сценарію                                             | Опис очікуваних результатів |
+|:-----:|:----------------------------------------------------------------------------------------------------------------------:|-----------------------------|
+| TC1.1 | selectSong(user_preferences={"Pop": 4, "Rock": 5, "EDM": 3}, available_songs=[{"title": "Song1", "artist": "Artist1", "genre": "Pop"}, {"title": "Song2", "artist": "Artist2", "genre": "Rock"}, {"title": "Song3", "artist": "Artist3", "genre": "EDM"}]) | Правильний - Словник з інформацією про вибрану пісню |
+| TC1.2 | selectSong(user_preferences={}, available_songs=[{"title": "Song1", "artist": "Artist1", "genre": "Pop"}, {"title": "Song2", "artist": "Artist2", "genre": "Rock"}, {"title": "Song3", "artist": "Artist3", "genre": "EDM"}]) | Неправильний - порожній словник (порожній результат) |
+| TC1.3 | selectSong(user_preferences={"Pop": 4, "Rock": 5, "EDM": 3}, available_songs=[])                                             | Неправильний - порожній словник (порожній результат) |
