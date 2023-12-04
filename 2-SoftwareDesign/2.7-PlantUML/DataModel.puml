@@ -1,0 +1,29 @@
+@startuml
+
+title Data Model
+left to right direction
+hide circle
+
+entity "User" as ent01 {
+  username (PK)
+  password
+}
+
+entity "SleepTracker" as ent02 {
+  dreamid (PK)
+  dreamname
+  dreamdescription
+}
+
+entity "MusicSelector" as ent03 {
+  songiddreamid (PK)
+  songname
+  songartist
+  username (FK)
+  dreamid  (FK)
+}
+
+ent01 --{ ent02 
+ent02 --{ ent03 
+
+@enduml
