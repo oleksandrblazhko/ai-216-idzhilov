@@ -11,4 +11,4 @@ jobs:
     - name: Install SQL linter
       run: |
        npm i -g sql-lint
-       sql-lint RelationDB.sql
+       sql-lint DataSchema.sql
