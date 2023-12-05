@@ -11,6 +11,6 @@ jobs:
       - name: Execute
         uses: github/super-linter@v4
         env:
-          VALIDATE_JAVASCRIPT_STANDARD: true
-          FILTER_REGEX_INCLUDE: ./*.js
+          VALIDATE_JAVA_STANDARD: true
+          FILTER_REGEX_INCLUDE: ./*.java
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
