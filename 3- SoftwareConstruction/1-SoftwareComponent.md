@@ -1,4 +1,4 @@
 | Тип програмної компоненти | Тип програмної компоненти | Місце розташування програмної компоненти |
 |:-------------------------:|:-------------------------:|:----------------------------------------:|
-| IDE                       | Java                      | Localhost                                |
-| Database Server           | Postgresql                | Localhost                                |
+| IDE                       | IntellijIDEA (Java 21)    | Localhost                                |
+| Database Server           | PgAdmin4 (Postgresql 16.1)| Localhost                                |
