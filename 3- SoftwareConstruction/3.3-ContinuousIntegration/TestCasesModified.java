@@ -16,17 +16,26 @@ public class TestCases {
 
         // Test case 1.1
         List<AvailableSong> selectedSongs1 = selectSong(userPreference1, availableSongs1);
-        System.out.println("TC 1.1 (User selected songs based on preferences): " + selectedSongs1);
+        System.out.println("TC 1.1 (User selected songs based on preferences) - is expected to be correct: " + selectedSongs1);
+        if(selectedSongs1.isEmpty()){
+            System.exit(-1);
+        }
 
         // Test case 1.2
         UserPreference emptyUserPreference = new UserPreference(Map.of());
-        List<AvailableSong> selectedSongs2 = selectSong(, );
-        System.out.println("TC 1.2 (User with empty preferences): " + selectedSongs2);
+        List<AvailableSong> selectedSongs2 = selectSong(emptyUserPreference, availableSongs1);
+        System.out.println("TC 1.2 (User with empty preferences) - is expected to be correct: " + selectedSongs2);
+        if(selectedSongs2.isEmpty()){
+            System.exit(-1);
+        }
 
         // Test case 1.3
         List<AvailableSong> emptyAvailableSongs = List.of();
         List<AvailableSong> selectedSongs3 = selectSong(userPreference1, emptyAvailableSongs);
-        System.out.println("TC 1.3 (No available songs): " + selectedSongs3);
+        System.out.println("TC 1.3 (No available songs) - is expected to be incorrect: " + selectedSongs3);
+        if(selectedSongs3.isEmpty()){
+            System.exit(-1);
+        }
     }
 
     public static List<AvailableSong> selectSong(UserPreference userPreference, List<AvailableSong> availableSongs) {
